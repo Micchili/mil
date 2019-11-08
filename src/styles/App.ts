@@ -101,7 +101,7 @@ input, select {
 *::after {
   box-sizing: border-box;
   font-weight: normal;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic Medium", YuGothic;
+  font-family: "M PLUS Rounded 1c";
 }
 
 a {
