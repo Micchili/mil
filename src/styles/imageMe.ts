@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const Image = styled.img`
-  height: 500px;
-  width: 650px;
-  border-radius: 60px;
-  border: solid 20px #5555ff;
+  height: 200px;
+  width: 250px;
+  border-radius: 20px;
+  border: solid 10px #5555ff;
 `
