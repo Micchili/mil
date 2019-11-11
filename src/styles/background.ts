@@ -6,6 +6,6 @@ export const BackGround = styled.div`
   display: flex;
   flex-direction: column;
   background-image:linear-gradient(-45deg, #f5eeed 25%, #D0F0F0 25%, #D0F0F0 50%, #f5eeed 50%, #f5eeed 75%, #D0F0F0 75%, #D0F0F0);
-  background-size: 50px 50px;
+  background-size: 70px 70px;
   background-attachment: fixed;
 `
