@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 firebase-config.ts
+storage.rules
+.firebaserc
 
 # testing
 /coverage
