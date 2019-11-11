@@ -1,6 +1,13 @@
 import styled from 'styled-components'
 
 export const Article = styled.article`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 200;
   width: 90vw;
   height: 90vh;
   background-color: #AAAAAA;
