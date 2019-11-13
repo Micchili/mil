@@ -10,17 +10,17 @@ export const SnsLink: React.FC = () => {
   return (
     <Section>
       <h3>Link</h3>
-      <a href="https://github.com/Micchili">
+      <a href="https://github.com/Micchili" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faGithub} />
         github.com/Micchili
       </a>
-      <a href="https://twitter.com/wagahaiwanekod7">
+      <a href="https://twitter.com/wagahaiwanekod7" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faTwitter} />
         twitter.com/wagahaiwanekod7
       </a>
-      <a href="https://www.instagram.com/micchili/">
+      <a href="https://www.instagram.com/micchili/" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faInstagram} />
-        instagram.com/micchili/
+        instagram.com/micchili
       </a>
     </Section>
   )
