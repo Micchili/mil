@@ -1,9 +1,11 @@
 import styled from 'styled-components'
 
-export const Section = styled.section`
-  height: 200px;
-  font-size: 25px;
+export const DivWraperSnsLink = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: 300px;
+  font-size: 45px;
+  padding: 10px;
+  border-left: solid 3px #ffffff;
 `

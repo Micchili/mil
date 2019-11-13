@@ -13,4 +13,12 @@ export const Article = styled.article`
   background-color: #AAAAAA;
   border-radius: 20px;
   opacity: 0.8;
+  display: flex;
+  justify-content: space-around;
+`
+
+export const DivCenter = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
 `
