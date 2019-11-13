@@ -1,15 +1,19 @@
 import * as React from 'react'
-import { NameText } from '../components/nameText'
 import { ImageMe } from '../components/imageMe'
 import { SnsLink } from '../components/snsLink'
-import { Article } from '../styles/bisinessCard'
+import { Article, DivCenter } from '../styles/bisinessCard'
+import { NamePlate } from '../molecules/namePlate'
 
 export const BisinessCard: React.FC = () => {
   return (
     <Article>
-      <NameText />
-      <ImageMe />
-      <SnsLink />
+      <DivCenter>
+        <ImageMe />
+      </DivCenter>
+      <DivCenter>
+        <NamePlate />
+        <SnsLink />
+      </DivCenter>
     </Article>
   )
 }
