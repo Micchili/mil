@@ -4,7 +4,11 @@ import { SnsLink } from '../components/snsLink'
 import { Article, DivCenter } from '../styles/bisinessCard'
 import { NamePlate } from './namePlate'
 
-export const BisinessCard: React.FC = () => {
+type IProps = {
+  style?: {}
+}
+
+export const BisinessCard: React.FC<IProps> = () => {
   return (
     <Article>
       <DivCenter>
