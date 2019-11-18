@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { H2 } from '../styles/profession'
+import { H2 } from '../styles/cardText'
 
 type IProps = {
   text: string
