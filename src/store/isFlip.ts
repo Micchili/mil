@@ -1,7 +1,7 @@
 import { Action } from "redux"
 
-export type isFlip = {
-  flipped: boolean
+export type Flip = {
+  isFlip: boolean
 }
 
 export const OPEN = "OPEN" as const
@@ -23,14 +23,14 @@ export const close = (): CloseAction => ({
   type: CLOSE
 })
 
-const initialState: isFlip = {
-  flipped: false
+const initialState: Flip = {
+  isFlip: false
 }
 
 type isFlipAction = OpenAction | CloseAction
 
-export default function Flip (
-  state: isFlip = initialState,
+export default function isOpenFlip (
+  state: Flip = initialState,
   action: isFlipAction
 ) {
   switch (action.type) {
@@ -38,11 +38,11 @@ export default function Flip (
       return state;
     case OPEN:
       return {
-        flipped: true
+        isFlip: true
       }
     case CLOSE:
       return {
-        flipped: false
+        isFlip: false
       }
   }
 }
