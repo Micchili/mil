@@ -1,19 +1,16 @@
 import * as React from 'react'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faAngleRight,faAngleLeft } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Button } from '../styles/enterButton'
+import { useDispatch, useSelector } from 'react-redux'
+import { AllState } from '../store/storeState'
 
 export const EnterButton: React.FC = () => {
-  library.add(faAngleRight,faAngleLeft)
+  const fade = useSelector((state: AllState) => state.isOpenFade.isFade);
+  console.log(fade)
+  const dispatch = useDispatch()
+
   return (
-    <button>
-      <div>
-        <FontAwesomeIcon icon={faAngleLeft} />
-      </div>
-      <p>Enter</p>
-      <div>
-        <FontAwesomeIcon icon={faAngleRight} />
-      </div>
-    </button>
+    <Button onClick={()=> {dispatch({type: "FADE_IN"})}}>
+    　クリックミー
+    </Button>
   )
 }
