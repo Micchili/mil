@@ -10,7 +10,7 @@ export const EnterButton: React.FC = () => {
 
   return (
     <Button onClick={()=> {dispatch({type: "FADE_IN"})}}>
-    　クリックミー
+      Click Here
     </Button>
   )
 }
