@@ -3,14 +3,13 @@ import { ImageMe } from '../components/imageMe'
 import { SnsLink } from '../components/snsLink'
 import { Article, DivCenter } from '../styles/bisinessCard'
 import { NamePlate } from './namePlate'
+import { CloseButton } from '../components/closeButton'
+import { FlipButton } from '../components/flipButton'
 
-type IProps = {
-  style?: {}
-}
-
-export const BisinessCard: React.FC<IProps> = () => {
+export const BisinessCard: React.FC = () => {
   return (
     <Article>
+      <CloseButton />
       <DivCenter>
         <ImageMe />
       </DivCenter>
@@ -18,6 +17,7 @@ export const BisinessCard: React.FC<IProps> = () => {
         <NamePlate />
         <SnsLink />
       </DivCenter>
+      <FlipButton />
     </Article>
   )
 }
