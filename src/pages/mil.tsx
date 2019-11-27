@@ -1,17 +1,18 @@
 import * as React from 'react'
-import { BisinessCard } from '../layouts/businessCard'
-import { Triangle } from '../components/triangle'
 import { BackGround } from '../styles/background'
-import { CircleDiv } from '../styles/circle'
-import { SquareDiv } from '../styles/square'
+import { Card } from '../layouts/card'
+import { EnterButton } from '../components/enterButton'
+import { TopTitle } from '../components/topTitle'
+import { Div } from '../styles/mil'
 
 export const Mil: React.FC = () => {
   return (
     <BackGround>
-      <Triangle />
-      <CircleDiv />
-      <SquareDiv />
-      <BisinessCard />
+      <TopTitle text={'Portfolio'} />
+      <Div>
+        <EnterButton />
+      </Div>
+      <Card />
     </BackGround> 
   )
 }
