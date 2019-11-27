@@ -1,11 +1,10 @@
 import * as React from 'react'
 import * as Styled from './styles/App'
 import { Mil } from './pages/mil'
-import { createStore } from 'redux'
-import Flip from './store/isFlip'
 import { Provider } from 'react-redux'
+import { store } from './store/storeState'
 
-const store = createStore(Flip)
+console.log(store.getState());
 
 const App: React.FC = () => {
   return (
