@@ -3,18 +3,20 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faSync } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useSelector, useDispatch } from 'react-redux'
-import { isFlip } from '../store/isFlip'
+import { AllState } from '../store/storeState'
+import { Button } from '../styles/flipButton'
 
 export const FlipButton: React.FC = () => {
-  const openSelecter = (state: isFlip) => state.flipped
+  const openSelecter = (state: AllState) => state.isOpenFlip.isFlip
   const flipped = useSelector(openSelecter)
+  console.log(flipped)
   const dispatch = useDispatch()
   library.add(faSync)
-  const flip = flipped ? 'OPEN' : 'CLOSE'
+  const flip = flipped ? 'CLOSE' : 'OPEN'
 
   return (
-    <button onClick={() => dispatch({type: flip})}>
+    <Button onClick={() => dispatch({type: flip})}>
       <FontAwesomeIcon icon={faSync}  />
-    </button>
+    </Button>
   )
 }
