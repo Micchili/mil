@@ -1,8 +1,8 @@
 import transition from 'styled-transition-group'
 
 export const CardWarp = transition.div`
-  width: 90vw;
-  height: 90vh;
+  width: 95vw;
+  height: 95vh;
   border-radius: 20px;
   position: absolute;
   top: 0;
