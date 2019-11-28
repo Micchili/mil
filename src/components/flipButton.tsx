@@ -9,7 +9,6 @@ import { Button } from '../styles/flipButton'
 export const FlipButton: React.FC = () => {
   const openSelecter = (state: AllState) => state.isOpenFlip.isFlip
   const flipped = useSelector(openSelecter)
-  console.log(flipped)
   const dispatch = useDispatch()
   library.add(faSync)
   const flip = flipped ? 'CLOSE' : 'OPEN'
