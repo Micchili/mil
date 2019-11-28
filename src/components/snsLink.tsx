@@ -16,15 +16,15 @@ export const SnsLink: React.FC = () => {
       </address>
       <a href="https://github.com/Micchili" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faGithub} />
-        github.com/Micchili
+        github/Micchili
       </a>
       <a href="https://twitter.com/wagahaiwanekod7" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faTwitter} />
-        twitter.com/wagahaiwanekod7
+        twitter/wagahaiwanekod7
       </a>
       <a href="https://www.instagram.com/micchili/" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faInstagram} />
-        instagram.com/micchili
+        instagram/micchili
       </a>
     </DivWraperSnsLink>
   )
