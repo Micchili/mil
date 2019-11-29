@@ -11,5 +11,5 @@ export const BackGround = styled.div`
   justify-content: space-evenly;
   flex-direction: column;
   background-color: ${(props: IProps) => props.state ? "#000000" : "#F1FAFF" };
-  opacity: ${(props: IProps) => props.state ? "0.6" : "1" };
+  opacity: ${(props: IProps) => props.state ? "0.8" : "1" };
 `
