@@ -3,8 +3,8 @@ import {Section, H2, Div, Bar, Button} from '../styles/skillBar';
 
 type IProps = {
   text: string;
-  skill?: number;
-  onClick?: (e: React.MouseEvent<HTMLElement>) => void;
+  skill: number;
+  onClick: (e: React.MouseEvent<HTMLElement>) => void;
 };
 
 export const SkillBar: React.FC<IProps> = props => {
