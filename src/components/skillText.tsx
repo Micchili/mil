@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Section, H2, P } from '../styles/skillText'
 
 type IProps = {
-  title?: string
+  title: string
   text: string
 }
 
