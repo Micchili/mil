@@ -2,20 +2,20 @@ import styled, {keyframes} from 'styled-components';
 
 const BubbleAnimation = keyframes`
   0% {
-    bottom: 0px;
+    bottom: 0;
     transform: translateX(0);
   }
   50% {
     transform: translateX(100px);
   }
   100% {
-    bottom: 1000px;
+    bottom: 100%;
   }
 `;
 
 export const Bubble = styled.div`
   position: absolute;
-  bottom: -40;
+  bottom: 0;
   width: 40px;
   height: 40px;
   background: linear-gradient(#05FBFF, #1E00FF);
