@@ -1,8 +1,8 @@
-import { createGlobalStyle } from 'styled-components';
+import {createGlobalStyle} from 'styled-components';
 
 export const Global = createGlobalStyle`
 html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
 small, strong, sub, sup, var,
@@ -123,4 +123,19 @@ header {
 h2,p,section,article {
   font-family: circleText,Quicksand, 游ゴシック体, "Yu Gothic", YuGothic,;
 }
-`
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+p {
+  outline:0;
+  font-size: 100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+`;
