@@ -12,19 +12,19 @@ export const SnsLink: React.FC = () => {
     <DivWraperSnsLink>
       <address>
         <FontAwesomeIcon icon={faEnvelope} />
-        wot.dannbo@gmail.com
+        &ensp;wot.dannbo@gmail.com
       </address>
       <a href="https://github.com/Micchili" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faGithub} />
-        github/Micchili
+        &ensp;Micchili
       </a>
       <a href="https://twitter.com/wagahaiwanekod7" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faTwitter} />
-        twitter/wagahaiwanekod7
+        &ensp;wagahaiwanekod7
       </a>
       <a href="https://www.instagram.com/micchili/" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faInstagram} />
-        instagram/micchili
+        &ensp;micchili
       </a>
     </DivWraperSnsLink>
   )
