@@ -4,6 +4,8 @@ export const Section = styled.section`
   height: 90%;
   border-radius: 20px;
   background-color: #FAFAFA;
+  padding: 7px;
+  overflow: scroll;
 
   @media screen and (min-width: 1024px) {
     width: 500px;
@@ -22,6 +24,7 @@ export const Section = styled.section`
 export const H2 = styled.h2`
   font-size: 50px;
   padding-left: 10px;
+  padding-bottom:5px;
 
   @media screen and (min-width: 1024px) {
     font-size: 50px;
