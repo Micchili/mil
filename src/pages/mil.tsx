@@ -1,24 +1,23 @@
-import * as React from 'react'
-import { BackGround } from '../styles/background'
-import { Card } from '../layouts/card'
-import { EnterButton } from '../components/enterButton'
-import { TopTitle } from '../components/topTitle'
-import { Div } from '../styles/mil'
-import { AllState } from '../store/storeState'
-import { useSelector } from 'react-redux'
+import * as React from 'react';
+import {BackGround} from '../styles/background';
+import {TopTitle} from '../components/topTitle';
+import {AllState} from '../store/storeState';
+import {useSelector} from 'react-redux';
+import {Bubbles} from '../components/bobble';
+import {Div} from '../styles/mil';
+import {NextButton} from '../components/nextButton';
 
 export const Mil: React.FC = () => {
-  const openSelecter = (state: AllState) => state.isOpenFade.isFade
-  const isOpen = useSelector(openSelecter)
+  const openSelecter = (state: AllState) => state.isOpenFade.isFade;
+  const isOpen = useSelector(openSelecter);
 
   return (
     <BackGround state={isOpen}>
-      <TopTitle text={'Portfolio'} />
+      <Bubbles />
       <Div>
-        <EnterButton />
+        <TopTitle text={'Portfolio'} />
+        <NextButton linkTo={'/about'} text={'About'} />
       </Div>
-      <Card />
-    </BackGround> 
-  )
-}
-
+    </BackGround>
+  );
+};
