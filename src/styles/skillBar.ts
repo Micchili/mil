@@ -7,6 +7,7 @@ type IProps = {
 export const Section = styled.section`
   border-radius: 17px;
   background-color: #FAFAFA;
+  padding-left: 10px;
 
   @media screen and (min-width: 1024px) {
     width: 700px;
@@ -23,7 +24,7 @@ export const Section = styled.section`
 `
 
 export const Div = styled.div`
-  width: 80%;
+  width: 98%;
   border: solid #000000 2px;
 `
 
