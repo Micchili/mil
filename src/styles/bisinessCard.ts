@@ -1,11 +1,11 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Article = styled.article`
   width: 95vw;
   height: 95vh;
   border-radius: 20px;
   display: flex;
-  background-color: #DDDDDD;
+  background-color: #dfdfdf;
 
   @media screen and (min-width: 1024px) {
     justify-content: space-around;
@@ -20,15 +20,15 @@ export const Article = styled.article`
     justify-content: space-around;
     align-items: center;
   }
-`
+`;
 
 export const DivCenter = styled.div`
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-`
+`;
 
 export const Div = styled.div`
-display: flex;
-justify-content: center;
-`
+  display: flex;
+  justify-content: center;
+`;
