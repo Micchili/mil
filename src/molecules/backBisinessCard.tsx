@@ -15,6 +15,7 @@ import {SkillText} from '../components/skillText';
 
 export const BackBisinessCard: React.FC = () => {
   const [discription, setDiscription] = React.useState(0);
+
   return (
     <BackCardWarp>
       <CloseButton />
@@ -36,16 +37,8 @@ export const BackBisinessCard: React.FC = () => {
             skill={70}
             onClick={() => setDiscription(2)}
           />
-          <SkillBar
-            text={'Vue'}
-            skill={60}
-            onClick={() => setDiscription(3)}
-          />
-          <SkillBar
-            text={'php'}
-            skill={70}
-            onClick={() => setDiscription(4)}
-          />
+          <SkillBar text={'Vue'} skill={60} onClick={() => setDiscription(3)} />
+          <SkillBar text={'php'} skill={70} onClick={() => setDiscription(4)} />
           <SkillBar
             text={'Laravel'}
             skill={70}
@@ -61,7 +54,10 @@ export const BackBisinessCard: React.FC = () => {
       <DivCenter>
         <DivRight>
           <SkillTextWrap>
-            <SkillText title={skills.text.title[discription]} text={skills.text.context[discription]} />
+            <SkillText
+              title={skills.text.title[discription]}
+              text={skills.text.context[discription]}
+            />
           </SkillTextWrap>
           <FlipButton />
         </DivRight>
