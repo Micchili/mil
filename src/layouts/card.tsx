@@ -8,7 +8,7 @@ import { BackBisinessCard } from '../molecules/backBisinessCard';
 
 export const Card: React.FC = () => {
   const fade = useSelector((state: AllState) => state.isOpenFade.isFade);
-  const flip = useSelector((state: AllState) => state.isOpenFlip.isFlip)
+  const flip = useSelector((state: AllState) => state.isOpenFlip.isFlip);
 
   return (
     <CardWarp unmountOnExit in={fade} timeout={550}>
