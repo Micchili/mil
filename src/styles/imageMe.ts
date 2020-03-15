@@ -1,14 +1,11 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Image = styled.img`
-  height: 500px;
-  width: 620px;
-  border-radius: 20px;
-  border: solid 10px #5555ff;
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.8);
 
   @media screen and (min-width: 1024px) {
-    height: 500px;
-    width: 620px;
+    height: 300px;
+    width: 400px;
   }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     height: 300px;
@@ -18,4 +15,4 @@ export const Image = styled.img`
     height: 180px;
     width: 230px;
   }
-`
+`;
