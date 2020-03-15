@@ -4,7 +4,7 @@ export const BackCardWarp = styled.article`
   width: 95vw;
   height: 95vh;
   border-radius: 20px;
-  background-color: #DDDDDD;
+  background-color: #FDFDFD;
   display: flex;
   justify-content: space-around;
 `
