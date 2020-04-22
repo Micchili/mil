@@ -20,6 +20,7 @@ time, mark, audio, video {
     font-size: 100%;
     vertical-align:baseline;
     background:transparent;
+    -webkit-font-smoothing:antialiased;
 }
 
 body {
@@ -46,11 +47,27 @@ q:before, q:after {
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+p {
+  outline:0;
+  font-size: 100%;
+  vertical-align:baseline;
+  background:transparent;
 }
 
 /* change colours to suit your needs */
@@ -102,40 +119,5 @@ input, select {
   box-sizing: border-box;
   font-weight: normal;
   font-family: "M PLUS Rounded 1c";
-}
-
-a {
-  text-decoration: none;
-}
-
-@font-face {
-	font-family: 'hogenull';
-  src: url(./font/font/NaishoMoji-Regular.otf);
-}
-@font-face {
-	font-family: 'circleText';
-  src: url(./font/font/corpminfont/logotypejp_corpmin.ttf);
-}
-
-header {
-  font-family: hogenull,Quicksand, 游ゴシック体, "Yu Gothic", YuGothic,;
-}
-h2,p,section,article {
-  font-family: circleText,Quicksand, 游ゴシック体, "Yu Gothic", YuGothic,;
-}
-
-button {
-  border: none;
-  cursor: pointer;
-  outline: none;
-  padding: 0;
-  appearance: none;
-}
-
-p {
-  outline:0;
-  font-size: 100%;
-  vertical-align:baseline;
-  background:transparent;
 }
 `;
