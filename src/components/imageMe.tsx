@@ -1,16 +1,10 @@
 import * as React from 'react'
 
 import{ Image }from '../styles/imageMe'
-import CharaImage from '../image/varchal.png'
-import RealImage from '../image/mil.jpg'
+import skin from '../image/varchal.png'
 
 export const ImageMe: React.FC = () => {
-  const [skin,setSkin] = React.useState(CharaImage)
-  const handleClick = () => skin === CharaImage ? setSkin(RealImage) : setSkin(CharaImage)
-
   return (
-    <button onClick={handleClick}>
-      <Image src={skin} />
-    </button>
+    <Image src={skin} />
   )
 }
