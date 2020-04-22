@@ -9,6 +9,7 @@ export const Bubbles: React.FC = () => {
       <Bubble />
       <Bubble />
       <Bubble />
+      <Bubble />
     </>
   )
 }
